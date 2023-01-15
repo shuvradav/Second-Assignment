@@ -14,13 +14,15 @@ body {
 /* ------nab bar------ */
 nav {
     display: flex;
+    padding-right: 20px;
+    padding-left: 40px;
     align-items: center;
     justify-content: space-between;
 }
 
-/* nav>h1 {
-    text-size-adjust: 100px;
-} */
+nav>h1 {
+    font-size: 40px;
+}
 
 nav>ul {
     display: flex;
@@ -35,7 +37,7 @@ nav>ul {
 
 .section-title {
     font-weight: 700px;
-    font-size: 50px;
+    font-size: 64px;
     line-height: 75px;
     text-align: center;
 }
@@ -66,12 +68,12 @@ nav>ul {
     grid-gap: 50px;
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .feature-section {
-        display: flex;
-        flex-direction: column-reverse;
+        display: block;
+        padding: 30px 10px;
     }
-} */
+}
 
 .feature-images {
     display: grid;
@@ -113,6 +115,8 @@ nav>ul {
 
 .our-text {
     color: #131313;
+    font-weight: 500px;
+    font-size: 38px;
 }
 
 .feature-text {
@@ -129,20 +133,26 @@ nav>ul {
     color: rgb(39, 38, 38);
 }
 
-/* @media only screen and (max-width: 600px) {
-    .journey-section {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
+@media only screen and (max-width: 600px) {
+    nav>h1 {
+        font-size: 30px;
     }
-} */
+
+    .journey-section {
+        display: block;
+        padding: 20px 10px;
+
+    }
+}
+
 .text-card {
     padding: 20px;
-    background-color: rgb(243, 237, 237);
+    background-color: rgb(244 247 247);
     color: black;
     margin: 30px;
+    font-size: 14px;
     box-shadow: 5px black;
-    border-radius: solid;
+    border-radius: 5px;
     /* border: 2px solid rgb(175, 173, 173); */
 }
 
@@ -150,10 +160,11 @@ nav>ul {
     margin-left: 60px;
 }
 
+
 .sticker-card {
     background-color: #f3761d;
     text-align: center;
-    padding: 20px 60px;
+    padding: 10px 40px;
     width: fit-content;
     color: white;
     font-weight: 900;
@@ -202,7 +213,9 @@ nav>ul {
 .icon-email {
     width: 200px;
     height: 200px;
-    border: 2px solid #f3761d;
+    padding-top: 10px;
+    border: 1px solid #f3761d;
+    border-radius: 8px;
 }
 
 .count {
@@ -222,11 +235,10 @@ nav>ul {
 
 .sponsors-img {
     display: flex;
-    justify-content: center;
-    gap: 200px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
     filter: grayscale(1);
+    padding-top: 40px;
 }
 
 
@@ -234,4 +246,88 @@ nav>ul {
     text-align: center;
     margin-bottom: 100px;
     margin-top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    nav>ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+
+    .image-section>img {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .section-description {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .journey-img {
+        margin-left: 0px;
+        width: 100%;
+        background-size: cover;
+        margin: 10px;
+
+    }
+
+    .text-card {
+        margin: 10px;
+        padding: 10px;
+    }
+
+
+
+    .my-portfolio {
+        flex-wrap: wrap;
+        gap: 10px;
+        transition-duration: 1s;
+        transition-property: transform;
+    }
+
+    .sponsors-img {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+
+    .facts-section {
+        padding: 20px;
+
+    }
+
+    .icon-ribon,
+    .icon-projects,
+    .icon-customers,
+    .icon-email {
+        width: 160px;
+        height: 160px;
+        padding-top: 10px;
+        border: 1px solid #f3761d;
+        border-radius: 8px;
+    }
+
+    .count {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .portfolio-text {
+        font-size: 16px;
+    }
 }
