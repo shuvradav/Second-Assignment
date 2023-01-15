@@ -24,6 +24,7 @@ nav>h1 {
     font-size: 40px;
 }
 
+
 nav>ul {
     display: flex;
     list-style: none;
@@ -227,6 +228,23 @@ nav>ul {
     color: #727272;
 }
 
+.team-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.team-member {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: 30px 0px;
+}
+
+.member {
+    border-radius: 50%;
+}
+
 .sponsors {
     text-align: center;
 }
@@ -253,6 +271,10 @@ nav>ul {
         display: block;
         text-align: center;
         padding-top: 20px;
+    }
+
+    .member {
+        width: 100%;
     }
 
     nav>ul {
